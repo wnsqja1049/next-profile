@@ -58,7 +58,7 @@ export const Projects = () => {
 						showArrows={true}
 						autoPlay={true}
 						infiniteLoop={true}
-						showThumbs={true}
+						showThumbs={false}
 						onChange={handleChange}>
 						{imageData.map(image => (
 							<div key={image.alt}>
