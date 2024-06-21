@@ -1,0 +1,82 @@
+"use client";
+import React, { useState } from "react";
+
+import {
+	Navbar as NextUINavbar,
+	NavbarContent,
+	NavbarMenu,
+	NavbarMenuToggle,
+	NavbarBrand,
+	NavbarItem,
+	NavbarMenuItem,
+} from "@nextui-org/navbar";
+import { link as linkStyles } from "@nextui-org/theme";
+import clsx from "clsx";
+
+import { siteConfig } from "@/config/site";
+import { ThemeSwitch } from "@/components/theme-switch";
+import {
+	TwitterIcon,
+	GithubIcon,
+	DiscordIcon,
+} from "@/components/icons";
+
+export const Navbar = () => {
+
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	return (
+		<NextUINavbar 
+		isBordered
+		isMenuOpen={isMenuOpen}
+		onMenuOpenChange={setIsMenuOpen}>
+			<NavbarContent justify="start">
+				{/* 타이틀 */}
+				<NavbarBrand as="li" className="gap-3 max-w-fit">
+					<div className="cursor-pointer font-bold text-2xl"
+						onClick={() => {
+							var anchor = document.querySelector(`#id_about_me`)
+							anchor!.scrollIntoView({ behavior: 'smooth', block: 'center' })
+						}}>Junbeom's Portfolio</div>
+				</NavbarBrand>
+
+				{/* 메뉴 */}
+				<div className="hidden md:inline-flex gap-4 justify-start ml-2">
+					{siteConfig.navItems.map((item) => (
+						<NavbarItem key={item.label}>
+							<div className="cursor-pointer font-bold"
+								onClick={() => {
+									var anchor = document.querySelector(`#${item.id}`)
+									anchor!.scrollIntoView({ behavior: 'smooth', block: 'center' })
+								}}>
+								{item.label}
+							</div>
+						</NavbarItem>
+					))}
+				</div>
+			</NavbarContent>
+
+			<NavbarContent justify="end">
+				<ThemeSwitch />
+				<NavbarMenuToggle className="md:hidden"/>
+			</NavbarContent>
+			
+			<NavbarMenu>
+				<div className="mx-4 mt-2 flex flex-col gap-2">
+					{siteConfig.navItems.map((item) => (
+						<NavbarMenuItem key={'menu_' + item.label}>
+							<div className="cursor-pointer font-bold"
+								onClick={() => {
+									var anchor = document.querySelector(`#${item.id}`)
+									anchor!.scrollIntoView({ behavior: 'smooth', block: 'center' })
+									setIsMenuOpen(false);
+								}}>
+								{item.label}
+							</div>
+						</NavbarMenuItem>
+					))}
+				</div>
+			</NavbarMenu>
+		</NextUINavbar>
+	);
+};

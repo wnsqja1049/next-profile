@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* BlackHanSans */
+@font-face {
+    font-family: "BlackHanSans-Regular";
+    src: url("/fonts/BlackHanSans/BlackHanSans-Regular.ttf");
+}
+
+
+
+/* NotoSansKR */
+@font-face {
+    font-family: "NotoSansKR-Black";
+    src: url("/fonts/NotoSansKR/NotoSansKR-Black.otf");
+}
+@font-face {
+    font-family: "NotoSansKR-Bold";
+    src: url("/fonts/NotoSansKR/NotoSansKR-Bold.otf");
+}
+@font-face {
+    font-family: "NotoSansKR-DemiLight";
+    src: url("/fonts/NotoSansKR/NotoSansKR-DemiLight.otf");
+}
+@font-face {
+    font-family: "NotoSansKR-Light";
+    src: url("/fonts/NotoSansKR/NotoSansKR-Light.otf");
+}
+@font-face {
+    font-family: "NotoSansKR-Medium";
+    src: url("/fonts/NotoSansKR/NotoSansKR-Medium.otf");
+}
+@font-face {
+    font-family: "NotoSansKR-Regular";
+    src: url("/fonts/NotoSansKR/NotoSansKR-Regular.otf");
+}
+@font-face {
+    font-family: "NotoSansKR-Thin";
+    src: url("/fonts/NotoSansKR/NotoSansKR-Thin.otf");
+}
+
+
+
+/* NotoSans */
+@font-face {
+    font-family: "NotoSans-Black";
+    src: url("/fonts/NotoSans/NotoSans-Black.ttf");
+}
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url("/fonts/NotoSans/NotoSans-Bold.ttf");
+}
+@font-face {
+    font-family: "NotoSans-ExtraBold";
+    src: url("/fonts/NotoSans/NotoSans-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "NotoSans-ExtraLight";
+    src: url("/fonts/NotoSans/NotoSans-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "NotoSans-Light";
+    src: url("/fonts/NotoSans/NotoSans-Light.ttf");
+}
+@font-face {
+    font-family: "NotoSans-Medium";
+    src: url("/fonts/NotoSans/NotoSans-Medium.ttf");
+}
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url("/fonts/NotoSans/NotoSans-Regular.ttf");
+}
+@font-face {
+    font-family: "NotoSans-SemiBold";
+    src: url("/fonts/NotoSans/NotoSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: "NotoSans-Thin";
+    src: url("/fonts/NotoSans/NotoSans-Thin.ttf");
+}
+
+
+
+/* Poppins */
+@font-face {
+    font-family: "Poppins-Black";
+    src: url("/fonts/Poppins/Poppins-Black.ttf");
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("/fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "Poppins-ExtraBold";
+    src: url("/fonts/Poppins/Poppins-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "Poppins-ExtraLight";
+    src: url("/fonts/Poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("/fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("/fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Poppins-Thin";
+    src: url("/fonts/Poppins/Poppins-Thin.ttf");
+}
+
+
+
+/* DoHyeon */
+@font-face {
+    font-family: "DoHyeon-Regular";
+    src: url("/fonts/DoHyeon/DoHyeon-Regular.ttf");
+}
+
+
+
+/* NanumGothic */
+@font-face {
+    font-family: "NanumGothic-Regular";
+    src: url("/fonts/NanumGothic/NanumGothic-Regular.ttf");
+}
+@font-face {
+    font-family: "NanumGothic-Bold";
+    src: url("/fonts/NanumGothic/NanumGothic-Bold.ttf");
+}
+@font-face {
+    font-family: "NanumGothic-ExtraBold";
+    src: url("/fonts/NanumGothic/NanumGothic-ExtraBold.ttf");
+}
