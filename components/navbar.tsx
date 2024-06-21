@@ -9,7 +9,10 @@ import {
 	NavbarBrand,
 	NavbarItem,
 	NavbarMenuItem,
-} from "@nextui-org/navbar";
+	Link
+} from "@nextui-org/react";
+
+
 import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
 
@@ -33,11 +36,11 @@ export const Navbar = () => {
 			<NavbarContent justify="start">
 				{/* 타이틀 */}
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
-					<div className="cursor-pointer font-bold text-2xl"
-						onClick={() => {
+					<Link className="cursor-pointer font-bold text-2xl"
+						onPress={() => {
 							var anchor = document.querySelector(`#id_about_me`)
 							anchor!.scrollIntoView({ behavior: 'smooth', block: 'center' })
-						}}>Junbeom's Portfolio</div>
+						}}>Junbeom's Portfolio</Link>
 				</NavbarBrand>
 
 				{/* 메뉴 */}
@@ -65,14 +68,14 @@ export const Navbar = () => {
 				<div className="mx-4 mt-2 flex flex-col gap-2">
 					{siteConfig.navItems.map((item) => (
 						<NavbarMenuItem key={'menu_' + item.label}>
-							<div className="cursor-pointer font-bold"
-								onClick={() => {
+							<Link className="cursor-pointer font-bold"
+								onPress={() => {
 									var anchor = document.querySelector(`#${item.id}`)
 									anchor!.scrollIntoView({ behavior: 'smooth', block: 'center' })
 									setIsMenuOpen(false);
 								}}>
 								{item.label}
-							</div>
+							</Link>
 						</NavbarMenuItem>
 					))}
 				</div>
