@@ -21,31 +21,31 @@ export const Projects = () => {
 		{
 			label: "Image 1",
 			alt: "image1",
-			url: "./images/projects/lol_api_capture_0.png",
+			url: "/images/projects/lol_api_capture_0.png",
 		},
 
 		{
 			label: "Image 2",
 			alt: "image2",
-			url: "./images/projects/lol_api_capture_1.png",
+			url: "/images/projects/lol_api_capture_1.png",
 		},
 
 		{
 			label: "Image 3",
 			alt: "image3",
-			url: "./images/projects/lol_api_capture_2.png",
+			url: "/images/projects/lol_api_capture_2.png",
 		},
 
 		{
 			label: "Image 4",
 			alt: "image4",
-			url: "./images/projects/lol_api_capture_3.png",
+			url: "/images/projects/lol_api_capture_3.png",
 		},
 
 		{
 			label: "Image 5",
 			alt: "image5",
-			url: "./images/projects/lol_api_capture_4.png",
+			url: "/images/projects/lol_api_capture_4.png",
 		},
 	];
 
