@@ -13,7 +13,7 @@ export const AboutMe = () => {
 					<div className="hidden md:block">
 						<span className='text-2xl font-bold'>김 준 범</span>
 						<span className="inline mx-2">웹 개발자(FE)</span>
-					</div>
+					</div> 
 					<p className='md:hidden text-2xl font-bold'>김 준 범</p>
 					<p className="md:hidden">웹 개발자(FE)</p>
 					<p>만드는 것을 좋아하는 웹 개발자.</p>

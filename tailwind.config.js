@@ -22,6 +22,13 @@ module.exports = {
         nanumGothicEB: ["NanumGothic-ExtraBold"],
       },
     },
+    listStyleType: {
+      none: 'none',
+      disc: 'disc',
+      decimal: 'decimal',
+      square: 'square',
+      roman: 'upper-roman',
+    }
   },
   darkMode: "class",
   plugins: [nextui()],
