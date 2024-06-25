@@ -1,6 +1,6 @@
 "use client";
 
-import { Image, Chip } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 
 export const AboutMe = () => {
 
@@ -8,7 +8,7 @@ export const AboutMe = () => {
 		<div>
 			<div className='flex flex-col md:flex-row items-center gap-10'>
 				<Image width={250} height={250} radius="full" src={`/images/profile/profile_capture_0.png`}/>
-				<div className="flex flex-col items-center md:items-start gap-1">
+				<div className="flex flex-col items-center md:items-start gap-1 font-nanumGothicR">
 
 					<div className="hidden md:block">
 						<span className='text-2xl font-bold'>김 준 범</span>

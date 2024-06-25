@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-import { Image, Button } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
 export const TopButton = () => {
   const [hideButton, setHideButton] = useState(true);

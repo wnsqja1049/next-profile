@@ -1,7 +1,7 @@
 "use client";
 
 import {
-	Image, Chip, Link
+	Image, Chip
 } from "@nextui-org/react";
 
 import { AnchorLink } from "@/components/anchorLink";

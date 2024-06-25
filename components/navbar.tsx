@@ -61,7 +61,7 @@ export const Navbar = () => {
 				<div className="mx-4 mt-2 flex flex-col gap-2">
 					{siteConfig.navItems.map((item) => (
 						<NavbarMenuItem key={'menu_' + item.label}>
-							<Link color="foreground" className="cursor-pointer font-bold"
+							<Link color="foreground" className="cursor-pointer text-xl font-bold"
 								onPress={() => {
 									var anchor = document.querySelector(`#${item.id}`)
 									anchor!.scrollIntoView({ behavior: 'smooth', block: 'center' })

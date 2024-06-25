@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Image, Link, Chip, usePagination, PaginationItemType } from "@nextui-org/react";
-import { ChevronIcon } from "./icons";
+import { Image, Chip } from "@nextui-org/react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -62,7 +61,7 @@ export const Projects = () => {
 	var carouselStyle = "md:w-[350px] bg-black border-2 rounded-lg";
 
 	var projectTitleStyle = "font-black text-3xl font-doHyeon";
-	var projectDescContainerStyle = "md:w-[400px] flex flex-col gap-2";
+	var projectDescContainerStyle = "md:w-[350px] flex flex-col gap-2";
 	var projectDescStyle = "flex flex-col gap-2 font-nanumGothicR";
 	var projectChipContainerStyle = "flex flex-wrap gap-1";
 
@@ -75,6 +74,7 @@ export const Projects = () => {
 						<Carousel
 							className={carouselStyle}
 							showArrows={true}
+							showStatus={false}
 							autoPlay={true}
 							infiniteLoop={true}
 							showThumbs={false}
@@ -115,6 +115,7 @@ export const Projects = () => {
 						<Carousel
 							className={carouselStyle}
 							showArrows={true}
+							showStatus={false}
 							autoPlay={true}
 							infiniteLoop={true}
 							showThumbs={false}

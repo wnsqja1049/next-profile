@@ -2,7 +2,6 @@ import { AboutMe } from "@/components/about-me";
 import { Career } from "@/components/career";
 import { Skills } from "@/components/skills";
 import { Projects } from "@/components/projects";
-import { Button } from "@nextui-org/button";
 import { TopButton } from "@/components/top-button";
 
 export default function Home() {
