@@ -17,32 +17,39 @@ export const Projects = () => {
 	}
 
 
-	const imageData = [
+	const portfolioImages = [
+		{
+			label: "Image 1",
+			alt: "image1",
+			url: "/images/projects/portfolio_0.png",
+		}, {
+			label: "Image 2",
+			alt: "image2",
+			url: "/images/projects/portfolio_1.png",
+		}, {
+			label: "Image 3",
+			alt: "image3",
+			url: "/images/projects/portfolio_2.png",
+		}
+	];
+	const garenImages = [
 		{
 			label: "Image 1",
 			alt: "image1",
 			url: "/images/projects/lol_api_capture_0.png",
-		},
-
-		{
+		}, {
 			label: "Image 2",
 			alt: "image2",
 			url: "/images/projects/lol_api_capture_1.png",
-		},
-
-		{
+		}, {
 			label: "Image 3",
 			alt: "image3",
 			url: "/images/projects/lol_api_capture_2.png",
-		},
-
-		{
+		}, {
 			label: "Image 4",
 			alt: "image4",
 			url: "/images/projects/lol_api_capture_3.png",
-		},
-
-		{
+		}, {
 			label: "Image 5",
 			alt: "image5",
 			url: "/images/projects/lol_api_capture_4.png",
@@ -61,6 +68,46 @@ export const Projects = () => {
 
 	return (
 		<div className="flex flex-col gap-4">
+			{/* Portfolio */}
+			<div className={projectContainerStyle}>
+				<div className={projectLayoutStyle}>
+					<div className={carouselContainerStyle}>
+						<Carousel
+							className={carouselStyle}
+							showArrows={true}
+							autoPlay={true}
+							infiniteLoop={true}
+							showThumbs={false}
+							onChange={handleChange}>
+							{portfolioImages.map(image => (
+								<div key={image.alt}>
+									<Image src={image.url} alt={image.alt} />
+								</div>
+							))}
+						</Carousel>
+					</div>
+
+					<div className={projectDescContainerStyle}>
+						<div className={projectTitleStyle}>포트폴리오</div>
+						<div className={projectDescStyle}>
+							<p>포트폴리오 용도로 제작한 웹사이트입니다.</p>
+							<p>다크모드를 지원하며 반응형으로 제작하였습니다. </p>
+							<p>React 기반에 Next UI와 Tailwind CSS를 활용하였고, Vercel로 배포하였습니다.</p>
+						</div>
+
+						<div className={projectChipContainerStyle}>
+							<Chip>React</Chip>
+							<Chip>Typescript</Chip>
+							<Chip>Next UI</Chip>
+							<Chip>Tailwind CSS</Chip>
+							<Chip>Vercel</Chip>
+						</div>
+
+						<div className="text-xl font-bold">URL</div>
+						<AnchorLink label="Portfolio" href="https://next-profile-git-main-kimjunbeoms-projects.vercel.app" />
+					</div>
+				</div>
+			</div>
 			{/* GAREN.GG */}
 			<div className={projectContainerStyle}>
 				<div className={projectLayoutStyle}>
@@ -72,7 +119,7 @@ export const Projects = () => {
 							infiniteLoop={true}
 							showThumbs={false}
 							onChange={handleChange}>
-							{imageData.map(image => (
+							{garenImages.map(image => (
 								<div key={image.alt}>
 									<Image src={image.url} alt={image.alt} />
 								</div>
