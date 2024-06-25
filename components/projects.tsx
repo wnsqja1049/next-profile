@@ -57,8 +57,8 @@ export const Projects = () => {
 
 	var projectContainerStyle = "md:w-[700px] mx-auto border-2 rounded-xl p-4";
 	var projectLayoutStyle = "flex flex-col md:flex-row gap-5";
-	var carouselContainerStyle = "flex flex-col justify-center";
-	var carouselStyle = "md:w-[350px] bg-black border-2 rounded-lg";
+	var carouselContainerStyle = "flex flex-col justify-center rounded-md";
+	var carouselStyle = "md:w-[350px] bg-black border-2";
 
 	var projectTitleStyle = "font-black text-3xl font-doHyeon";
 	var projectDescContainerStyle = "md:w-[350px] flex flex-col gap-2";
@@ -81,7 +81,7 @@ export const Projects = () => {
 							onChange={handleChange}>
 							{portfolioImages.map(image => (
 								<div key={image.alt}>
-									<Image src={image.url} alt={image.alt} />
+									<Image src={image.url} radius="none" alt={image.alt} />
 								</div>
 							))}
 						</Carousel>
@@ -122,7 +122,7 @@ export const Projects = () => {
 							onChange={handleChange}>
 							{garenImages.map(image => (
 								<div key={image.alt}>
-									<Image src={image.url} alt={image.alt} />
+									<Image src={image.url} radius="none" alt={image.alt} />
 								</div>
 							))}
 						</Carousel>
