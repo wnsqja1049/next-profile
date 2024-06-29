@@ -92,7 +92,7 @@ export const Projects = () => {
 						<div className={projectDescStyle}>
 							<p>포트폴리오 용도로 제작한 웹사이트입니다.</p>
 							<p>다크모드를 지원하며 반응형으로 제작하였습니다. </p>
-							<p>React 기반에 Next UI와 Tailwind CSS를 활용하였고, Vercel로 배포하였습니다.</p>
+							<p>React 기반에 Next.js, Next UI, Tailwind CSS를 활용하였고, Vercel로 배포하였습니다.</p>
 						</div>
 
 						<div className={projectChipContainerStyle}>
@@ -105,6 +105,9 @@ export const Projects = () => {
 
 						<div className="text-xl font-bold">URL</div>
 						<AnchorLink label="Portfolio" href="https://next-profile-git-main-kimjunbeoms-projects.vercel.app" />
+
+						<div className="text-xl font-bold">Github</div>
+						<AnchorLink label="wnsqja1049/next-profile" href="https://github.com/wnsqja1049/next-profile" />
 					</div>
 				</div>
 			</div>
@@ -133,11 +136,10 @@ export const Projects = () => {
 						<div className={projectDescStyle}>
 							<p><span className="font-bold">Riot API를 이용한 League of Legends 게임의 전적검색 사이트</span>입니다.</p>
 							<p>평소 즐기던 게임의 전적검색 사이트 <AnchorLink label="deeplol.gg" href="https://www.deeplol.gg/" />를 참고하여 게임정보를 어떻게 제공해 주는지 분석하고,
-								게임사에서 제공하는 데이터와 이미지, API를 활용하여 정보를 시각화 하는 과정이 재미있는 경험이 되었습니다.
-							</p>
+								게임사에서 제공하는 데이터와 이미지, API를 활용하여 정보를 시각화 하는 과정이 재미있는 경험이 되었습니다.</p>
 							<p>최근 게임 전적, 유저 검색 기능과 아이템, 챔피언, 스킬등의 데이터를 제공합니다.</p>
-							PERSONAL API KEY를 발급받아 사용하였으며 시간당 Request 횟수가 제한되어 있습니다.
-							React 기반에 Next UI와 Tailwind CSS를 활용하였고, Vercel로 배포하였습니다.
+							<p>PERSONAL API KEY를 발급받아 사용하였으며 시간당 Request 횟수가 제한되어 있습니다.</p>
+							<p>React 기반에 Next.js, Next UI, Tailwind CSS를 활용하였고, Vercel로 배포하였습니다.</p>
 						</div>
 
 						<div className={projectChipContainerStyle}>
@@ -150,6 +152,9 @@ export const Projects = () => {
 
 						<div className="text-xl font-bold">URL</div>
 						<AnchorLink label="GAREN.GG" href="https://lol-api-git-main-kimjunbeoms-projects.vercel.app" />
+
+						<div className="text-xl font-bold">Github</div>
+						<AnchorLink label="wnsqja1049/lol-api" href="https://github.com/wnsqja1049/lol-api" />
 					</div>
 				</div>
 			</div>

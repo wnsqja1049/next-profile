@@ -1,6 +1,7 @@
 "use client";
 
-import { Image } from "@nextui-org/react";
+import { Link, Image } from "@nextui-org/react";
+import { AnchorLink } from "@/components/anchorLink";
 
 export const AboutMe = () => {
 
@@ -19,7 +20,9 @@ export const AboutMe = () => {
 					<p>만드는 것을 좋아하는 웹 개발자.</p>
 					<p>소통하고 협력하는 프론트엔드 개발자.</p>
 					<p className='text-xl font-bold mt-3'>Contact</p>
-					<p className="text-md">wnsqja1049@gmail.com</p>
+					<Link className="font-nanumGothicB" underline="hover" href="mailto:wnsqja1049@gmail.com">wnsqja1049@gmail.com</Link>
+					<p className='text-xl font-bold mt-3'>Github</p>
+					<AnchorLink label="github.com/wnsqja1049" href="https://github.com/wnsqja1049" />
 				</div>
 			</div>
 		</div>

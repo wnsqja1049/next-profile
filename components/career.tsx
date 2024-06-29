@@ -13,7 +13,7 @@ export const Career = () => {
 	var projectListContainerStyle = "flex flex-col gap-4";
 	var projectContainerStyle = "mx-auto flex border-2 rounded-2xl p-5 flex-col md:flex-row";
 	var projectLogoContainerStyle = "mr-5 flex flex-col justify-center items-center";
-	var projectDescContainerStyle = "w-[400px] flex flex-col gap-2 md:border-l-4 md:pl-5 border-dotted font-nanumGothicR break-keep";
+	var projectDescContainerStyle = "md:w-[300px] w-[400px] flex flex-col gap-2 md:border-l-4 md:pl-5 border-dotted font-nanumGothicR break-keep";
 	var projectTitleStyle = "font-black text-3xl font-doHyeon";
 	var projectDetailListStyle = "list-disc ml-7";
 	var projectChipContainerStyle = "flex flex-wrap gap-1";
@@ -92,7 +92,7 @@ export const Career = () => {
 						<div className={projectDescContainerStyle}>
 							<div className={projectTitleStyle}>COSMOS81</div>
 
-							<p>서울 배경부터 가상의 판타지 세상까지 81개의 우주를 다루는 메타버스 플랫폼입니다.</p>
+							<p>서울 배경부터 가상의 판타지 세상까지 <span className="font-bold">81개의 우주를 다루는 메타버스 플랫폼</span>입니다.</p>
 							<p>(개발을 완료하였으나 메타버스 시장 변화로 인해 서비스 오픈이 연기되었습니다.)</p>
 
 							<div>
