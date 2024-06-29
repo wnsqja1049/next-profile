@@ -13,7 +13,7 @@ export const Career = () => {
 	var projectListContainerStyle = "flex flex-col gap-4";
 	var projectContainerStyle = "mx-auto flex border-2 rounded-2xl p-5 flex-col md:flex-row";
 	var projectLogoContainerStyle = "mr-5 flex flex-col justify-center items-center";
-	var projectDescContainerStyle = "md:w-[400px] w-[300px] flex flex-col gap-2 md:border-l-4 md:pl-5 border-dotted font-nanumGothicR break-keep";
+	var projectDescContainerStyle = "md:w-[400px] flex flex-col gap-2 md:border-l-4 md:pl-5 border-dotted font-nanumGothicR break-keep";
 	var projectTitleStyle = "font-black text-3xl font-doHyeon";
 	var projectDetailListStyle = "list-disc ml-7";
 	var projectChipContainerStyle = "flex flex-wrap gap-1";
