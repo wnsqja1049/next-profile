@@ -1,5 +1,7 @@
 "use client";
 
+import clsx from "clsx";
+
 import {
 	Image, Chip
 } from "@nextui-org/react";
@@ -7,16 +9,16 @@ import {
 import { AnchorLink } from "@/components/anchorLink";
 
 export const Career = () => {
-	var companyNameStyle = "text-2xl font-bold mb-2 font-doHyeon";
-	var companyTermStyle = "text-base font-nanumGothicR";
+	const companyNameStyle			= clsx("text-2xl", "font-bold", "mb-2", "font-doHyeon");
+	const companyTermStyle			= clsx("text-base", "font-nanumGothicR");
 
-	var projectListContainerStyle = "flex flex-col gap-4";
-	var projectContainerStyle = "mx-auto flex border-2 rounded-2xl p-5 flex-col md:flex-row";
-	var projectLogoContainerStyle = "mr-5 flex flex-col justify-center items-center";
-	var projectDescContainerStyle = "md:w-[400px] flex flex-col gap-2 md:border-l-4 md:pl-5 border-dotted font-nanumGothicR break-keep";
-	var projectTitleStyle = "font-black text-3xl font-doHyeon";
-	var projectDetailListStyle = "list-disc ml-7";
-	var projectChipContainerStyle = "flex flex-wrap gap-1";
+	const projectListContainerStyle	= clsx("flex", "flex-col", "gap-4");
+	const projectContainerStyle		= clsx("mx-auto", "flex", "border-2", "rounded-2xl", "p-5", "flex-col", "md:flex-row");
+	const projectLogoContainerStyle	= clsx("mr-5", "flex", "flex-col", "justify-center", "items-center");
+	const projectDescContainerStyle	= clsx("md:w-[400px]", "flex flex-col", "gap-2", "md:border-l-4", "md:pl-5", "border-dotted", "font-nanumGothicR", "break-keep");
+	const projectTitleStyle			= clsx("font-black", "text-3xl", "font-doHyeon");
+	const projectDetailListStyle	= clsx("list-disc", "ml-7");
+	const projectChipContainerStyle	= clsx("flex", "flex-wrap", "gap-1");
 
 	return (
 		<div className="flex flex-col gap-10">

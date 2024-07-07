@@ -22,6 +22,7 @@ export const Skills = () => {
 				<div className="flex flex-wrap gap-2">
 					<SkillItem name={"jquery"} imageWidth={100} boxSize={1}/>
 					<SkillItem name={"react"} imageWidth={100} boxSize={1}/>
+					<SkillItem name={"redux"} imageWidth={80} boxSize={1}/>
 					<SkillItem name={"tailwindcss"} imageWidth={100} boxSize={1}/>
 					<SkillItem name={"nextjs"} imageWidth={100} boxSize={1}/>
 					<SkillItem name={"flutter"} imageWidth={100} boxSize={1}/>

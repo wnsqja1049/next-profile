@@ -61,7 +61,7 @@ export const Projects = () => {
 	var carouselStyle = "md:w-[350px] bg-black border-2";
 
 	var projectTitleStyle = "font-black text-3xl font-doHyeon";
-	var projectDescContainerStyle = "md:w-[350px] flex flex-col gap-2";
+	var projectDescContainerStyle = "md:w-[400px] flex flex-col gap-2";
 	var projectDescStyle = "flex flex-col gap-2 font-nanumGothicR";
 	var projectChipContainerStyle = "flex flex-wrap gap-1";
 
