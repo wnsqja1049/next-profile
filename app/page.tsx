@@ -3,6 +3,7 @@ import { Career } from "@/components/career";
 import { Skills } from "@/components/skills";
 import { Projects } from "@/components/projects";
 import { TopButton } from "@/components/top-button";
+import { MatterCanvas } from "@/components/matter";
 
 export default function Home() {
 
@@ -29,6 +30,7 @@ export default function Home() {
 					<Projects/>
 				</section>
 			</div>
+			<MatterCanvas/>
 			
 			<TopButton/>
 		</div>
