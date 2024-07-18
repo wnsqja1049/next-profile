@@ -195,7 +195,7 @@ export const Career = () => {
 						<div className={projectDescContainerStyle}>
 							<div className={projectTitleStyle}>ShowBusiness</div>
 
-							<p>쇼비즈니스 회사 홈페이지입니다.</p>
+							<p>고객의 소비 활동을 생산 활동으로 바꾸어 삶의 질을 향상시키는 다양한 비즈니스를 선사하는 기업 쇼비즈니스의 홈페이지입니다.</p>
 							<p>(현재 서비스 종료되었습니다.)</p>
 							<AnchorLink label="관련 기사 링크" href="https://www.psnews.co.kr/news/articleView.html?idxno=2001231" />
 
